@@ -5,7 +5,7 @@ umask 077
 case "${1:-}" in
   preparar)
     sudo apt update
-    sudo apt install openvpn python3
+    sudo apt install openvpn python3 iptables curl
     openvpn --version
     [[ -c /dev/net/tun ]] || { echo 'TUN ausente; pare antes de configurar.' >&2; exit 1; }
     if [[ ! -e ta.key ]]; then openvpn --genkey tls-auth ta.key; fi

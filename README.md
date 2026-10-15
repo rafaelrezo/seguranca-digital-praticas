@@ -39,7 +39,7 @@ Python 3.10 ou posterior, OpenSSL 3 e `cryptography` com versão fixada em `requ
 | [a14](a14/) | CBC, AES-GCM, envelope e contraprovas | `bash cbc.sh preparar` |
 | [a15](a15/) | RSA/OAEP, híbrida, RSA-PSS/ECDSA e certificados | `bash chaves.sh` |
 | [a16](a16/) | Hash, HMAC, senhas e TLS local | `bash hash_hmac.sh hash` |
-| [a17](a17/) | PKI, configuração EC2 e clientes Windows/Linux | Siga o README e a aula antes de executar. |
+| [a17](a17/) | PKI, gateway VPN e máquina interna isolada na VPC | Siga o README e a aula antes de executar. |
 
 Os READMEs de cada pasta listam a ordem dos comandos. Aulas e decisões de aprendizagem permanecem no MkDocs. Os certificados da A15 duram dois dias e são usados pelo TLS da A16; se vencerem, use uma cópia nova da pasta `a15` no mesmo nível de `a16` para reemitir o conjunto.
 
@@ -47,4 +47,4 @@ Os READMEs de cada pasta listam a ordem dos comandos. Aulas e decisões de apren
 
 Use somente dados fictícios e chaves descartáveis. Os scripts geram arquivos locais; `.gitignore` exclui privadas, certificados, perfis e saídas. Não envie esses arquivos ao GitHub, à IA ou na entrega. O CBC não autentica o arquivo; os parâmetros de senha/custo são didáticos.
 
-Na A17, lance **uma EC2 por dupla pelo console AWS Academy**. O repositório não lança recursos. Conecte o cliente local, valide as recusas e siga o encerramento EC2/EBS descrito na aula; parar o cliente não termina a instância.
+Na A17, lance **duas EC2 por dupla pelo console AWS Academy**, na mesma VPC: gateway OpenVPN público e máquina interna sem Internet. O repositório não lança recursos. Configure ida/retorno, conecte o cliente local e valide acesso, isolamento e recusas. Termine as duas instâncias e confira EBS/rede conforme a aula; parar o cliente não encerra os recursos.
