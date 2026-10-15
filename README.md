@@ -37,7 +37,7 @@ Python 3.10 ou posterior, OpenSSL 3 e `cryptography` com versão fixada em `requ
 | Pasta | Conteúdo | Primeiro comando, depois de entrar na pasta |
 |---|---|---|
 | [a14](a14/) | CBC, AES-GCM, envelope e contraprovas | `bash cbc.sh preparar` |
-| [a15](a15/) | RSA/OAEP, híbrida, assinatura e certificados | `bash chaves.sh` |
+| [a15](a15/) | RSA/OAEP, híbrida, RSA-PSS/ECDSA e certificados | `bash chaves.sh` |
 | [a16](a16/) | Hash, HMAC, senhas e TLS local | `bash hash_hmac.sh hash` |
 | [a17](a17/) | PKI, configuração EC2 e clientes Windows/Linux | Siga o README e a aula antes de executar. |
 
