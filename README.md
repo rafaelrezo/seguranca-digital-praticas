@@ -1,4 +1,4 @@
-# Segurança Digital — práticas A14–A17
+# Segurança Digital — práticas A14–A17 e A22
 
 Arquivos prontos para acompanhar as aulas: [material completo do curso](https://rafaelrezo.github.io/seguranca-digital/). Leia a etapa da aula, preveja o resultado e execute o comando indicado. Não é necessário copiar código para montar os programas, criar conta no GitHub ou fazer fork.
 
@@ -40,8 +40,9 @@ Python 3.10 ou posterior, OpenSSL 3 e `cryptography` com versão fixada em `requ
 | [a15](a15/) | RSA/OAEP, híbrida, RSA-PSS/ECDSA e certificados | `bash chaves.sh` |
 | [a16](a16/) | Hash, HMAC, senhas e TLS local | `bash hash_hmac.sh hash` |
 | [a17](a17/) | PKI, gateway VPN e máquina interna isolada na VPC | Siga o README e a aula antes de executar. |
+| [a22](a22/) | Laboratório local de enumeração, JWT, sessão e autorização com ZAP | `python3 servidor_ordens_a22.py` |
 
-Os READMEs de cada pasta listam a ordem dos comandos. Aulas e decisões de aprendizagem permanecem no MkDocs. Os certificados da A15 duram dois dias e são usados pelo TLS da A16; se vencerem, use uma cópia nova da pasta `a15` no mesmo nível de `a16` para reemitir o conjunto.
+Os READMEs de cada pasta listam a ordem dos comandos. A A22 usa apenas Python padrão para o servidor local; ZAP, `nmap` e `ffuf` entram nas etapas indicadas na página da aula. Aulas e decisões de aprendizagem permanecem no MkDocs. Os certificados da A15 duram dois dias e são usados pelo TLS da A16; se vencerem, use uma cópia nova da pasta `a15` no mesmo nível de `a16` para reemitir o conjunto.
 
 ## Dados e encerramento
 
